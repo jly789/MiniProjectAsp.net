@@ -61,6 +61,7 @@ namespace AspnetCoreStudy.Controllers
 
                 this.ViewBag.Pager = pager;
 
+                Console.WriteLine("테스트");
 
                 Console.BackgroundColor = ConsoleColor.Green;
                 return View(data);
