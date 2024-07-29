@@ -2,21 +2,21 @@
 using AspnetCoreStudy.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Data.Entity;
-using System.Reflection.PortableExecutable;
 
 namespace AspnetCoreStudy.Controllers
 {
     public class NoteController : Controller
     {
-   
-      
 
-        public IActionResult Index(int pg=1)
+
+
+        public IActionResult Index(int pg = 1)
         {
-      
 
 
-            using (var db = new AspnetNoteDbContext()) {
+
+            using (var db = new AspnetNoteDbContext())
+            {
 
                 //SELECT 쿼리
                 // List<Note> selectList = db.Notes.ToList().Where().OrderBy();
@@ -42,7 +42,7 @@ namespace AspnetCoreStudy.Controllers
                 // foreach ( var user in list){
                 // console.WriteLine($"{user.UserId},{user.UserName}, {user.Position.PositionName}");
                 //
-               
+
 
 
                 var list = db.Notes.ToList();
@@ -55,15 +55,17 @@ namespace AspnetCoreStudy.Controllers
 
                 var pager = new Pager(recsCount, pg, pageSize);
 
-                int recSkip = (pg-1) * pageSize; 
+                int recSkip = (pg - 1) * pageSize;
 
                 var data = list.Skip(recSkip).Take(pager.PageSize).ToList();
 
                 this.ViewBag.Pager = pager;
 
+
+                Console.BackgroundColor = ConsoleColor.Green;
                 return View(data);
             }
-            
+
 
 
         }
@@ -85,21 +87,22 @@ namespace AspnetCoreStudy.Controllers
         public IActionResult Add(Note model)
         {
 
-            if (ModelState.IsValid) {
+            if (ModelState.IsValid)
+            {
 
-              
+
 
                 model.UserNo = int.Parse(HttpContext.Session.GetInt32("UserNo").ToString());
 
 
-                using (var db= new AspnetNoteDbContext())
+                using (var db = new AspnetNoteDbContext())
 
                 {
 
 
                     db.Notes.Add(model);
-                db.SaveChanges();
-                return RedirectToAction("index");
+                    db.SaveChanges();
+                    return RedirectToAction("index");
                 }
             }
 
@@ -114,16 +117,17 @@ namespace AspnetCoreStudy.Controllers
         public ActionResult Detail(int NoteNo)
         {
 
-            using (var db = new AspnetNoteDbContext()) { 
-            
+            using (var db = new AspnetNoteDbContext())
+            {
+
                 var note = db.Notes.FirstOrDefault(x => x.NoteNo.Equals(NoteNo));
                 return View(note);
             }
 
 
-               
+
         }
-        
+
         public ActionResult Update(int NoteNo)
         {
 
@@ -133,7 +137,7 @@ namespace AspnetCoreStudy.Controllers
                 var note = db.Notes.FirstOrDefault(x => x.NoteNo.Equals(NoteNo));
                 return View(note);
             }
-          
+
         }
 
         [HttpPost]
@@ -197,7 +201,7 @@ namespace AspnetCoreStudy.Controllers
             return RedirectToAction("index");
         }
 
-     
-        
+
+
     }
 }
