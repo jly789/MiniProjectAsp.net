@@ -1,0 +1,131 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\NewFolder1\**" />
+    <Compile Remove="Views\NewFolder2\**" />
+    <Compile Remove="Views\NewFolder3\**" />
+    <Compile Remove="Views\NewFolder4\**" />
+    <Content Remove="Views\NewFolder1\**" />
+    <Content Remove="Views\NewFolder2\**" />
+    <Content Remove="Views\NewFolder3\**" />
+    <Content Remove="Views\NewFolder4\**" />
+    <EmbeddedResource Remove="Views\NewFolder1\**" />
+    <EmbeddedResource Remove="Views\NewFolder2\**" />
+    <EmbeddedResource Remove="Views\NewFolder3\**" />
+    <EmbeddedResource Remove="Views\NewFolder4\**" />
+    <None Remove="Views\NewFolder1\**" />
+    <None Remove="Views\NewFolder2\**" />
+    <None Remove="Views\NewFolder3\**" />
+    <None Remove="Views\NewFolder4\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\HomeController1.cs" />
+    <Compile Remove="Models\Note - 복사.cs" />
+    <Compile Remove="Models\NoteAddModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\upload\0392160b-3e59-4100-a985-461983cf21f7.PNG" />
+    <Content Remove="wwwroot\images\upload\104792b0-7210-49ce-9825-ec3e6d8061d3.PNG" />
+    <Content Remove="wwwroot\images\upload\27841a4c-6705-4008-b05a-f58f223be96c.PNG" />
+    <Content Remove="wwwroot\images\upload\2794dcea-69ed-415c-9381-63ddee4e9a5a.jpg" />
+    <Content Remove="wwwroot\images\upload\42dca2ca-f429-4025-8ef6-fb780ada2655.PNG" />
+    <Content Remove="wwwroot\images\upload\48579840-f615-491b-aff3-a41d9b4e3fcd.PNG" />
+    <Content Remove="wwwroot\images\upload\522409ff-dfde-42bb-81b1-90336a8bc8ad.PNG" />
+    <Content Remove="wwwroot\images\upload\78509c09-09fe-491c-94cb-f14ca32a5fc8.jpg" />
+    <Content Remove="wwwroot\images\upload\7d99292c-a334-447e-a151-46e9ca6d474d.PNG" />
+    <Content Remove="wwwroot\images\upload\7fc2fc02-a579-4bd9-9514-9962539c3087.PNG" />
+    <Content Remove="wwwroot\images\upload\874c584b-7f31-4a56-b80a-1c4b77e67f16.PNG" />
+    <Content Remove="wwwroot\images\upload\8aaeb2a2-b7f6-4634-af66-27926694c927.PNG" />
+    <Content Remove="wwwroot\images\upload\93a134f4-3854-4da0-b096-c126a027b91c.PNG" />
+    <Content Remove="wwwroot\images\upload\a40813fe-1848-40a9-995f-7c1f42ac3aaa.PNG" />
+    <Content Remove="wwwroot\images\upload\b08e9587-07c5-463c-89dc-a63cee758d4d.PNG" />
+    <Content Remove="wwwroot\images\upload\b4c49239-efc7-487c-a46a-ba18b6f4bf9b" />
+    <Content Remove="wwwroot\images\upload\bd9539ff-e255-4d0f-bf7a-f04b1829fae1.PNG" />
+    <Content Remove="wwwroot\images\upload\c943967d-263f-481c-bdd0-35e7fa7c7e56.PNG" />
+    <Content Remove="wwwroot\images\upload\d84dbc4c-ef65-435a-91ae-cf4eb46bad27.PNG" />
+    <Content Remove="wwwroot\images\upload\dec6d6b6-620e-4ce6-998c-d035eeea256e.PNG" />
+    <Content Remove="wwwroot\images\upload\e770b5e7-781f-4326-9f53-8e3802f49a0e.PNG" />
+    <Content Remove="wwwroot\images\upload\ea0eacb6-6e99-41dd-b550-e827df3efcd0.PNG" />
+    <Content Remove="wwwroot\images\upload\ed081833-d38f-4c8f-84c9-065805d11583.PNG" />
+    <Content Remove="wwwroot\images\upload\ed560cc5-1e92-422a-b2f7-3aa7f7a3ada6.PNG" />
+    <Content Remove="wwwroot\images\upload\efbd7df7-cb26-458c-8113-136a9be14f17.PNG" />
+    <Content Remove="wwwroot\images\upload\f83a453b-779b-4d85-8f1d-9f71c71f4f94.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\jly78\source\repos\AspnetCoreStudy\AspnetCoreStudy\Controllers\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\.editorconfig" />
+    <None Remove="Views\Study" />
+    <None Remove="Views\Study.folder" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\jly78\source\repos\AspnetCoreStudy\AspnetCoreStudy\Controllers\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\jly78\source\repos\AspnetCoreStudy\AspnetCoreStudy\Controllers\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aws4RequestSigner" Version="1.0.3" />
+    <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="Bower" Version="1.3.11" />
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+    <PackageReference Include="jQuery" Version="3.7.1" />
+    <PackageReference Include="Microsoft.AspNet.SessionState.SessionStateModule" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.SignedHttpRequest" Version="8.0.1" />
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Validation" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.2.2" />
+    <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Net.Requests" Version="4.3.0" />
+    <PackageReference Include="System.Net.WebHeaderCollection" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\upload\" />
+  </ItemGroup>
+
+</Project>

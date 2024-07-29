@@ -1,0 +1,68 @@
+﻿
+
+
+
+
+
+
+<div class="row">
+   
+</div>
+<br />
+<div class="row">
+    <div class="col-lg-10">
+        <div class="panel panel-default">
+
+
+            <div class="form-group">
+                <label>제목</label>
+                <br/>
+
+                <input type="text" class="form-control" readonly value="@Model.NoteTitle"/></br>
+          
+              
+            </div>
+          
+     
+          
+        </div>
+
+        <div class="trumbowyg-box" readonly>
+
+            @Html.Raw(Model.NoteContents)
+         
+         
+        </div>
+
+    </div>
+   
+
+    <div class="panel-footer">
+        <a class="btn btn-primary" asp-controller="Note" asp-action="Index">목록</a>
+        <a class="btn btn-primary" asp-controller="Note" asp-action="Update" asp-route-NoteNo="@Model.NoteNo" id="no">수정하기</a>
+      
+
+       
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+
+
+  
+
+        $("#no").click(function () { 
+        
+         
+            return false;
+        
+        })
+
+    </script>
+
+}
+
+
+
+</div>

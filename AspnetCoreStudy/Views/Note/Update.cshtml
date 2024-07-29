@@ -1,0 +1,63 @@
+﻿@model AspnetCoreStudy.Models.Note
+
+
+<form class="form-horizontal" method="post" asp-controller="Note"  asp-action="Delete" style="margin-left:800px;">
+    <input type="hidden" class="form-control" asp-for="NoteNo" placeholder="공지번호"></>
+    <button type="submit" class="btn btn-primary">공지삭제</button>
+</form>
+
+<div class="row">
+    <div class="col-lg-10"</div>
+    <div class="col-lg-10">
+        <form class="form-horizontal" method="post" asp-controller="Note" asp-action="Update">
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+
+
+
+            <div class="form-group">
+                <label>제목</label>
+                <input type="hidden" class="form-control" asp-for="NoteNo" placeholder="공지번호"></>
+                <input type="hidden" class="form-control" asp-for="UserNo" placeholder="회원번호"></>
+            
+                <input type="text" class="form-control" asp-for="NoteTitle" placeholder="제목 입력"></>
+                <span class="text-danger" asp-validation-for="NoteTitle"></span>
+                <br />
+            </div>
+
+
+
+            <div class="form-group">
+
+                <textarea class="form-control editor" rows="20" asp-for="NoteContents" placeholder="내용 입력"></textarea>
+                <span class="text-danger" asp-validation-for="NoteContents"></span>
+            </div>
+
+            <div class="form-group">
+
+            
+                <button type="submit" class="btn btn-primary">공지수정</button>
+
+@*                 <a type="submit" class="btn btn-primary" onclick="history.back();">뒤로가기</a> *@
+            </div>
+
+        </form>
+     
+        <br></>
+
+  
+    </div>
+
+
+  
+
+
+</div>
+
+
+
+
+
+
+
+
